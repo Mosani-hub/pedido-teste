@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Digital</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .banner {
+            background-color: #DAA520;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin: 20px auto;
+            border-radius: 8px;
+            max-width: 900px;
+        }
+        .banner h2 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .section-title {
+            font-size: 1.8em;
+            color: #DAA520;
+            margin-bottom: 10px;
+        }
+        .product-category {
+            margin-bottom: 40px;
+        }
+        .product-item {
+            margin-bottom: 20px;
+        }
+        .product-item h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .product-item p {
+            margin: 5px 0;
+        }
+        .order-button {
+            background-color: #DAA520;
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .order-button:hover {
+            background-color: #b8860b;
+        }
+        .description {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+        }
+        .cart {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .cart p {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Delícias da Casa</h1>
+</header>
+
+<div class="banner">
+    <h2>Promoção do Dia: Coxinha por R$ 6,00!</h2>
+</div>
+
+<main>
+    <div class="description">
+        <p>Oferecemos salgados e lanches feitos com ingredientes frescos e de alta qualidade, garantindo sabor e satisfação a cada mordida.</p>
+    </div>
+
+    <div class="product-category">
+        <h2 class="section-title">Salgados</h2>
+        <div class="product-item">
+            <h3>Coxinha</h3>
+            <p>Ingredientes: Frango, massa de batata, temperos especiais.</p>
+            <p>Tamanhos: Médio, Grande</p>
+            <p>Preço: R$ 7,00</p>
+           <button onclick="addToCart(7)">Adicionar ao Carrinho</button>
+           <h3>Pastel</h3>
+            <p>Ingredientes: Frango, temperos especiais.</p>
+            <p>Tamanhos: Grande</p>
+            <p>Preço: R$ 7,00</p>
+            <button onclick="addToCart(7)">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Mais itens de salgados -->
+    </div>
+
+    <div class="product-category">
+        <h2 class="section-title">Empadas</h2>
+        <div class="product-item">
+             <h3>Palmito</h3>
+            <p>Ingredientes: Palmito, massa crocante, temperos.</p>
+            <p>Tamanhos: Individual</p>
+            <p>Preço: R$ 6,00</p>
+          <button onclick="addToCart(7)">Adicionar ao Carrinho</button>
+           <h3>Frango</h3>
+            <p>Ingredientes: Palmito, massa crocante, temperos.</p>
+            <p>Tamanhos: Individual</p>
+            <p>Preço: R$ 6,00</p>
+          <button onclick="addToCart(7)">Adicionar ao Carrinho</button>
+           <h3>Frango com catupiry</h3>
+            <p>Ingredientes: Palmito, massa crocante, temperos.</p>
+            <p>Tamanhos: Individual</p>
+            <p>Preço: R$ 6,00</p>
+            <button onclick="addToCart(6)">Adicionar ao Carrinho</button>
+          
+        </div>
+        <!-- Mais itens de empadas -->
+    </div>
+
+    <div class="product-category">
+        <h2 class="section-title">Lanches</h2>
+        <div class="product-item">
+            <h3>Sanduíche Natural</h3>
+            <p>Ingredientes: Peito de peru, queijo, alface, tomate.</p>
+            <p>Tamanhos: Médio, Grande</p>
+            <p>Preço: R$ 7,00 - R$ 12,00</p>
+          <button onclick="addToCart(6)">Adicionar ao Carrinho</button>
+           <h3>Cachorro Quente</h3>
+            <p>Ingredientes: Peito de peru, queijo, alface, tomate.</p>
+            <p>Tamanhos: Médio, Grande</p>
+            <p>Preço: R$ 7,00 - R$ 12,00</p>
+          <button onclick="addToCart(6)">Adicionar ao Carrinho</button>
+           <h3>Hamburguer</h3>
+            <p>Ingredientes: Peito de peru, queijo, alface, tomate.</p>
+            <p>Tamanhos: Médio, Grande</p>
+          
+            <p>Preço: R$ 7,00 - R$ 12,00</p>
+          <button onclick="addToCart(6)">Adicionar ao Carrinho</button>
+           <h3>X-Salada</h3>
+            <p>Ingredientes: Peito de peru, queijo, alface, tomate.</p>
+            <p>Tamanhos: Médio, Grande</p>
+            <p>Preço: R$ 7,00 - R$ 12,00</p>
+          <button onclick="addToCart(6)">Adicionar ao Carrinho</button>
+           <h3>X-Tudo</h3>
+            <p>Ingredientes: Peito de peru, queijo, alface, tomate.</p>
+            <p>Tamanhos: Médio, Grande</p>
+            <p>Preço: R$ 7,00 - R$ 12,00</p>
+            <button onclick="addToCart(12)">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Mais itens de lanches -->
+    </div>
+
+    <div class="cart">
+        <h2>Carrinho</h2>
+        <p>Total de Itens: <span id="totalItems">0</span></p>
+        <p>Valor Total: R$ <span id="totalPrice">0.00</span></p>
+        <a href="https://wa.me/5517996390812?text=Gostaria%20de%20finalizar%20meu%20pedido" class="order-button">Encomendar</a>
+    </div>
+</main>
+
+<footer>
+    <p>© 2023 Delícias da Casa. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    let totalItems = 0;
+    let totalPrice = 0.00;
+
+    function addToCart(price) {
+        totalItems += 1;
+        totalPrice += price;
+        document.getElementById('totalItems').textContent = totalItems;
+        document.getElementById('totalPrice').textContent = totalPrice.toFixed(2);
+    }
+</script>
+
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
